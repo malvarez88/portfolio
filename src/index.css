@@ -17,7 +17,7 @@
   --color-pink-primary: #f72d7a;
   --color-pink-secondary: #bc0450;
   --color-green-primary: #6ff7dd;
-  --color-green-secondary: #0ae2b8;
+  --color-green-secondary: #09b996;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -64,6 +64,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2, section > h5 {
