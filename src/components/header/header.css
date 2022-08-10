@@ -76,7 +76,7 @@ header {
 /* ===== MQ SMALL ===== */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 75vh;
   }
 
   .header__socials,
