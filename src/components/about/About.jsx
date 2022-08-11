@@ -46,7 +46,7 @@ const About = () => {
             satisfactions.
             <br />
             Finally, in July, the Bootcamp ended, having finished
-            <a href="#portfolio"> 4 projects </a>(one individual, one in group
+            <a href="#portfolio"> 3 projects </a>(one individual, one in group
             and the third professional), and with that my flame lit again . Now
             I find myself working on some personal projects, like this Portfolio, and also
             looking to expand my knowledge. If you are interested in talking to
