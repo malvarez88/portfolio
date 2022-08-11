@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section id="about">
       <h5>Get To Know</h5>
-      <h2>About Me!</h2>
+      <h2>About Me</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiAward className="about__icon" />
               <h5>Experience</h5>
               <small>1 Year - For Now</small>
@@ -30,16 +30,30 @@ const About = () => {
                 <h5>Projects</h5>
                 <small>4+ Completed Projects</small>
               </a>
-            </article>
+            </article> */}
           </div>
           <p>
-            Well, what can i say! My career as a developer started relatively
+            {/* Well, what can i say! My career as a developer started relatively
             recently, but I've always been interested in programming. I am a
             person who pays attention to detail and with the desire to continue
-            learning. I love working in a team and achieving the proposed goals!
+            learning. I love working in a team and achieving the proposed goals! */}
+            Well, what can I say? <br />
+            My life as a developer starts with me quitting the job I had 6 for
+            years, where I wasn't unhappy, but I didn't have that fire inside me
+            anymore. I decided to go back to something I knew could turn it on
+            again. That's how I signed up for a Coding Bootcamp, in April 2022
+            and it was +800 hours of code, countless frustrations and even more
+            satisfactions.
+            <br />
+            Finally, in July, the Bootcamp ended, having finished
+            <a href="#portfolio"> 4 projects </a>(one individual, one in group
+            and the third professional), and with that my flame lit again . Now
+            I find myself working on some personal projects, like this Portfolio, and also
+            looking to expand my knowledge. If you are interested in talking to
+            me, click below!
           </p>
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+            Contact
           </a>
         </div>
       </div>

@@ -30,7 +30,8 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  justify-content: center;
+ 
+  justify-content: space-around;
 }
 
 /* ===== MQ MEDIUM ===== */

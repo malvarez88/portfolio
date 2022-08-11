@@ -29,7 +29,7 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={EC} alt="reactnative" />
+            <img src={EC} alt="ecommerce" />
           </div>
           <h3>App for HHRR Managment - Global News</h3>
           <div className="porfolio__item-cta">

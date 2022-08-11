@@ -74,6 +74,11 @@ section h5 {
   color: var(--color-text);
 }
 
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
 /* ===== MQ MEDIUM ===== */
 @media screen and (max-width: 1024px) {
   .about__container {
