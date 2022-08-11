@@ -109,13 +109,13 @@ const Experience = () => {
                 <small className="text-ligth">Basic</small>
               </div>
             </article>
-            <article className="experience__details">
+            {/* <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Phyton</h4>
+                <h4>Python</h4>
                 <small className="text-ligth">Basic</small>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
       </div>
