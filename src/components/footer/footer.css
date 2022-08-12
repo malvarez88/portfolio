@@ -31,3 +31,16 @@ footer a {
     margin-bottom: 4rem;
     color: var(--color-bg)
 }
+
+.footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__links-icon {
+    font-size: 1.5rem;
+    gap: 1rem;
+}

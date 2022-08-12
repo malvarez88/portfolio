@@ -12,10 +12,10 @@
   transition: var(--transition);
 }
 
-.portfolio__item:hover {
+/* .portfolio__item:hover {
   border-color: var(--color-pink-primary);
   background: transparent;
-}
+} */
 
 .portfolio__item-image {
   border-radius: 1.5rem;
@@ -30,7 +30,6 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
- 
   justify-content: space-around;
 }
 
