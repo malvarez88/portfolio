@@ -32,7 +32,25 @@ const Portfolio = () => {
             <img src={EC} alt="ecommerce" />
           </div>
           <h3>App for HHRR Managment - Global News</h3>
-          <div className="porfolio__item-cta">
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/diego-scarpati/Global-News-Back"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Github Backend
+            </a>
+          </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/diego-scarpati/Global-News-Front"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Github Frontend
+            </a>
+          </div>
+          {/* <div className="porfolio__item-cta">
             <a
               href="https://github.com/diego-scarpati/Global-News-Back"
               className="btn btn-primary"
@@ -47,7 +65,7 @@ const Portfolio = () => {
             >
               Github Front
             </a>
-          </div>
+          </div> */}
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
