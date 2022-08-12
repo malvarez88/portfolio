@@ -38,7 +38,7 @@ const About = () => {
             person who pays attention to detail and with the desire to continue
             learning. I love working in a team and achieving the proposed goals! */}
             Well, what can I say? <br />
-            My life as a developer starts with me quitting the job I had 6 for
+            My life as a developer starts with me quitting the job I had for 6
             years, where I wasn't unhappy, but I didn't have that fire inside me
             anymore. I decided to go back to something I knew could turn it on
             again. That's how I signed up for a Coding Bootcamp, in April 2022
