@@ -13,6 +13,7 @@ const Contact = () => {
     emailjs.sendForm('service_m5ezkos', 'template_cys8vap', form.current, '90RIMMXBWxGu7zF-s')
    
     e.target.reset(e)
+    alert('message sent')
   };
   return (
     <section id="contact">
