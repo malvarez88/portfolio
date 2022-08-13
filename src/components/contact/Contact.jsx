@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.css";
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-
+import Alert from '@mui/material/Alert';
 import {MdOutlineEmail} from 'react-icons/md'
 
 const Contact = () => {
@@ -11,8 +11,9 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_m5ezkos', 'template_cys8vap', form.current, '90RIMMXBWxGu7zF-s')
-    
+   
     e.target.reset(e)
+    alert('message sent')
   };
   return (
     <section id="contact">
