@@ -10,12 +10,10 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  overflow: hidden;
+  position: relative;
 }
 
-/* .portfolio__item:hover {
-  border-color: var(--color-pink-primary);
-  background: transparent;
-} */
 
 .portfolio__item-image {
   border-radius: 1.5rem;
@@ -31,6 +29,25 @@
   gap: 1rem;
   margin-bottom: 1rem;
   justify-content: space-around;
+}
+
+.portfolio__overview {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(110%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__item:hover .portfolio__overview{
+  
+  transform: translateY(0%);
 }
 
 /* ===== MQ MEDIUM ===== */
