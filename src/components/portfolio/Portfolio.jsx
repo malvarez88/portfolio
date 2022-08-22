@@ -26,6 +26,9 @@ const Portfolio = () => {
               Github
             </a>
           </div>
+          <div className="portfolio__overview">
+            <p>This is my portfolio, actually i don't need to explain a lot, you can see it by your self 😉</p>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
@@ -49,6 +52,11 @@ const Portfolio = () => {
             >
               Github Frontend
             </a>
+          </div>
+          <div className="portfolio__overview">
+            <p>We made an application for the Global News company in two weeks, which was necessary so that its employees could notify absences and see notifications from their cell phones and at any time. <br/>
+            Used technologies: React Native, Redux, NodeJS, Sequelize.
+            </p>
           </div>
           {/* <div className="porfolio__item-cta">
             <a
@@ -81,6 +89,11 @@ const Portfolio = () => {
               Github
             </a>
           </div>
+          <div className="portfolio__overview">
+            <p>We created an ecommerce from scratch, in two weeks. In this project I had to work on the backend. We separate the files in their corresponding folders, so that when checking errors, you would know where to look for them <br/>
+Used technologies: NodeJS, JWT, Sequelize.
+            </p>
+          </div>
         </article>
         
         <article className="portfolio__item">
@@ -104,6 +117,12 @@ const Portfolio = () => {
               Deploy
             </a>
           </div>
+          <div className="portfolio__overview">
+            <p>I made an application to see the weather of any city, using Vanilla Javascript
+            </p>
+          </div>
+
+
         </article>
         
         <article className="portfolio__item">
@@ -119,6 +138,10 @@ const Portfolio = () => {
             >
               Github
             </a>
+          </div>
+          <div className="portfolio__overview">
+            <p>In this proyect i had to use a public API. The one i used was from TMDB. <br/> Used technologies: React
+            </p>
           </div>
         </article>
       </div>
