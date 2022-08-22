@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.css";
-import RN from '../../assets/globalnews.jpg';
 import EC from '../../assets/edlab_back.png';
 import TMDB from '../../assets/tmdb.png';
 import PF from '../../assets/portfolio.png'
+import WA from '../../assets/weatherapp.png'
 
 
 const Portfolio = () => {
@@ -82,6 +82,30 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
+        
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={WA} alt="reactnative" />
+          </div>
+          <h3>Weather App</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/malvarez88/weatherApp/tree/master"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://weather-app-livid-gamma.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Deploy
+            </a>
+          </div>
+        </article>
+        
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={TMDB} alt="reactnative" />
@@ -97,7 +121,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        
       </div>
     </section>
   );
