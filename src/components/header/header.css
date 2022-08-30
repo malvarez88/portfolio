@@ -45,7 +45,7 @@ header {
 /* ===== IMG ===== */
 
 .me {
-  width: 40rem;
+  /* width: 40rem; */
   height: 60rem;
   position: absolute;
   left: 50%;
@@ -110,6 +110,17 @@ header {
     flex: 1;
   } */
 
+}
+
+@media screen and (max-height: 500px) {
+  .me {
+    width: 10rem;
+    height: 60rem;
+  }
+
+  header {
+    height: 50vh;
+  }
 }
 
 

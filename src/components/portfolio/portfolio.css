@@ -31,7 +31,11 @@
   justify-content: space-around;
 }
 
-.portfolio__overview {
+/* p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+} */
+/* .portfolio__overview {
   bottom: 0;
   left: 0;
   right: 0;
@@ -43,12 +47,11 @@
   max-height: 100%;
   transform: translateY(110%);
   transition: transform 0.3s ease-in-out;
-}
+} */
 
-.portfolio__item:hover .portfolio__overview{
-  
+/* .portfolio__item:hover .portfolio__overview{
   transform: translateY(0%);
-}
+} */
 
 /* ===== MQ MEDIUM ===== */
 @media screen and (max-width: 1024px) {
