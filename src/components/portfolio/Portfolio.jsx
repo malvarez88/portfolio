@@ -7,6 +7,11 @@ import WA from '../../assets/weatherapp.png'
 import YT from '../../assets/ytclone.png'
 
 
+// const projects = [
+//   {name: 'Portfolio', github: 'https://github.com/malvarez88/portfolio/tree/master', image: {YT}, }
+// ]
+
+
 const Portfolio = () => {
   return (
     <section id="portfolio">
