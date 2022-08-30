@@ -49,6 +49,13 @@ const Portfolio = () => {
             >
               Github
             </a>
+            <a
+              href="https://ytmedia-clone.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Deploy
+            </a>
           </div>
           <div className="portfolio__overview">
             <p>Here, i tried to copy Youtube page. With a Sidebar, a Search bar, and the posibility to watch YT videos and YT Channels. <br/> Used technologies: React, Material UI, Javascript, CSS, Axios and the RapidAPI</p>
