@@ -62,9 +62,9 @@ const About = () => {
             <br />
             For me Agile methodoliogies its a way of life. Mistakes and changes
             in priority are a natural part of evolution. Therefore, the best way
-            to evolve is to try, lerar, and then try again.
+            to evolve is to try, learn, and then try again.
             <br />
-            I'm a innovator, and want to create the worlds bvery best software
+            I'm a innovator, and want to create the worlds very best software
             solutions, purppose-built to improve the wat people work and live.
           </p>
           <a href="#contact" className="btn btn-primary">
