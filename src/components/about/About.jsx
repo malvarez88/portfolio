@@ -33,24 +33,6 @@ const About = () => {
             </article> */}
           </div>
           <p>
-            {/* Well, what can i say! My career as a developer started relatively
-            recently, but I've always been interested in programming. I am a
-            person who pays attention to detail and with the desire to continue
-            learning. I love working in a team and achieving the proposed goals! */}
-            {/* Well, what can I say? <br />
-            My life as a developer starts with me quitting the job I had for 6
-            years, where I wasn't unhappy, but I didn't have that fire inside me
-            anymore. I decided to go back to something I knew could turn it on
-            again. That's how I signed up for a Coding Bootcamp, in April 2022
-            and it was +800 hours of code, countless frustrations and even more
-            satisfactions.
-            <br />
-            Finally, in July, the Bootcamp ended, having finished
-            <a href="#portfolio"> 3 projects </a>(one individual, one in group
-            and the third professional), and with that my flame lit again . Now
-            I find myself working on some personal projects, like this Portfolio, and also
-            looking to expand my knowledge. If you are interested in talking to
-            me, click below! */}
             I'm a React & Node Full Stack developer, based in Buenos Aires,
             Argentina. I see my self as a passionate person, a good problem
             solver, handful with both technical and human skills.
@@ -65,7 +47,7 @@ const About = () => {
             to evolve is to try, learn, and then try again.
             <br />
             I'm a innovator, and want to create the worlds very best software
-            solutions, purppose-built to improve the wat people work and live.
+            solutions, purppose-built to improve the way people work and live.
           </p>
           <a href="#contact" className="btn btn-primary">
             Contact
