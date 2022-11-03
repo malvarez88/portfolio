@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
   margin: 0;
@@ -15,10 +17,10 @@
   --color-bg: #231f20;
   --color-bg-variant: #473c3f;
   --color-text: #f9fcf0;
-  --color-pink-primary: #f72d7a;
-  --color-pink-secondary: #bc0450;
-  --color-green-primary: #6ff7dd;
-  --color-green-secondary: #09b996;
+  --color-pink-primary: #FF8787;
+  --color-pink-secondary: #E26868;
+  --color-green-primary: #BCE29E;
+  --color-green-secondary: #E5EBB2;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -37,11 +39,14 @@ html {
 
 body {
   /* font-family: "Roboto", sans-serif; */
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'RocknRoll One', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Lato', sans-serif; */
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
   background-image: url(../src/assets/asfalt-dark.png);
+  z-index: 2;
 }
 
 /* ===== GENERAL STYLES ===== */
@@ -56,7 +61,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 

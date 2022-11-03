@@ -1,9 +1,10 @@
 import React from "react";
 import "./about.css";
 import image from "../../assets/caricature-square-pink.png";
-import { FiAward } from "react-icons/fi";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import mariano from '../../assets/mariano1.jpeg';
+// import { FiAward } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
+// import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={image} alt="me-image" />
+            <img src={mariano} alt="me-image" />
           </div>
         </div>
         <div className="about__content">
