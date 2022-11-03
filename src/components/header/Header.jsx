@@ -3,6 +3,7 @@ import "./header.css";
 import CTA from "./CTA";
 import logo from "../../assets/logoma.png";
 import HeaderSocials from "./HeaderSocials";
+import video from '../../assets/harley.mp4';
 
 const Header = () => {
   return (
@@ -21,6 +22,9 @@ const Header = () => {
           Scroll Down
         </a>
       </div>
+      <video muted autoPlay loop>
+        <source src={video} type='video/mp4'/>
+      </video>
     </header>
   );
 };

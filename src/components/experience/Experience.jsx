@@ -36,8 +36,8 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Material UI</h4>
-                <small className="text-ligth">Intermediate</small>
+                <h4>Typescript</h4>
+                <small className="text-ligth">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
@@ -45,6 +45,20 @@ const Experience = () => {
               <div>
                 <h4>React</h4>
                 <small className="text-ligth">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Next</h4>
+                <small className="text-ligth">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Material UI</h4>
+                <small className="text-ligth">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
@@ -109,13 +123,13 @@ const Experience = () => {
                 <small className="text-ligth">Basic</small>
               </div>
             </article>
-            {/* <article className="experience__details">
+            <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
                 <h4>Python</h4>
-                <small className="text-ligth">Basic</small>
+                <small className="text-ligth">Intermediate</small>
               </div>
-            </article> */}
+            </article>
           </div>
         </div>
       </div>

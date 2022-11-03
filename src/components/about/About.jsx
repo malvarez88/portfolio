@@ -1,9 +1,10 @@
 import React from "react";
 import "./about.css";
 import image from "../../assets/caricature-square-pink.png";
-import { FiAward } from "react-icons/fi";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import mariano from '../../assets/mariano1.jpeg';
+// import { FiAward } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
+// import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={image} alt="me-image" />
+            <img src={mariano} alt="me-image" />
           </div>
         </div>
         <div className="about__content">
@@ -34,7 +35,7 @@ const About = () => {
           </div>
           <p>
             I'm a React & Node Full Stack developer, based in Buenos Aires,
-            Argentina. I see my self as a passionate person, a good problem
+            Argentina. I am a passionate person, a good problem
             solver, handful with both technical and human skills.
             <br />
             I'm self driven and responsible for delivery of assigned task within
@@ -50,7 +51,7 @@ const About = () => {
             solutions, purppose-built to improve the way people work and live.
           </p>
           <a href="#contact" className="btn btn-primary">
-            Contact
+            Contact Me!
           </a>
         </div>
       </div>

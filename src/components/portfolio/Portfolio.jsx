@@ -6,10 +6,14 @@ import PF from "../../assets/portfolio.png";
 import WA from "../../assets/weatherapp.png";
 import YT from "../../assets/ytclone.png";
 import PA from "../../assets/post-app.png";
+import IC from "../../assets/icommerce.png"
+import MA from "../../assets/post.png"
 
 // const projects = [
 //   {name: 'Portfolio', github: 'https://github.com/malvarez88/portfolio/tree/master', image: {YT}, }
 // ]
+
+//CAMBIAR FOTOS!!!!!!
 
 const Portfolio = () => {
   return (
@@ -34,8 +38,36 @@ const Portfolio = () => {
           <div className="portfolio__overview">
             <p>
               This is my portfolio, actually i don't need to explain a lot, you
-              can see it by your self 😉 <br />
+              can see it by yourself 😉 <br />
               Used technologies: React, Material UI, Javascript, CSS.
+            </p>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IC} alt="reactnative" />
+          </div>
+          <h3>iCommerce</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/malvarez88/ecommerce-next-tailwind-ts"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://icommerce-btedsqzk4-malvarez88.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Deploy
+            </a>
+          </div>
+          <div className="portfolio__overview">
+            <p>
+              This is my iCommerce. I've used Typescript, Next.js &  Tailwindcss. For CMS i used Sanity.io, and for Auth, NextAuth. You can also login using Google.
+              Checkout uses Stripe. Please check it out!
             </p>
           </div>
         </article>
@@ -71,7 +103,7 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={PA} alt="postapp" />
+            <img src={MA} alt="postapp" />
           </div>
           <h3>Post App</h3>
           <div className="portfolio__item-cta">
