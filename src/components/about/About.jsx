@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <p>
             I'm a React & Node Full Stack developer, based in Buenos Aires,
-            Argentina. I see my self as a passionate person, a good problem
+            Argentina. I am a passionate person, a good problem
             solver, handful with both technical and human skills.
             <br />
             I'm self driven and responsible for delivery of assigned task within
@@ -50,7 +50,7 @@ const About = () => {
             solutions, purppose-built to improve the way people work and live.
           </p>
           <a href="#contact" className="btn btn-primary">
-            Contact
+            Contact Me!
           </a>
         </div>
       </div>
