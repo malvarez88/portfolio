@@ -42,10 +42,10 @@ html {
 body {
   /* font-family: "Roboto", sans-serif; */
   /* font-family: 'RocknRoll One', sans-serif; */
-  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Roboto Mono', monospace;
   /* font-family: 'Special Elite', cursive; */
   /* font-family: 'Lato', sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.9;
@@ -70,7 +70,7 @@ h5 {
 
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.0rem;
 }
 
 section {
