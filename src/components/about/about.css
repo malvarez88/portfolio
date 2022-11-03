@@ -1,14 +1,14 @@
 .about__container {
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 45% 50%;
+  gap: 5%;
 }
 
 .about__me {
   width: auto;
   height: auto;
   /* aspect-ratio: 1/1; */
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   /* background-color: linear-gradient(
     45deg,
     transparent,
@@ -22,8 +22,8 @@
 }
 
 .about__me-image {
-  /* height: 100%;
-  width: 100%; */
+  /* height: 100%; */
+  width: 100%;
   border-radius: 1rem;
   overflow: hidden;
   /* transform: rotate(10deg); */
