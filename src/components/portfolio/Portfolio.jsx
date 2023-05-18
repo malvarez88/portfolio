@@ -1,19 +1,7 @@
 import React from "react";
 import "./portfolio.css";
-import EC from "../../assets/edlab_back.png";
-import TMDB from "../../assets/tmdb.png";
-import PF from "../../assets/portfolio.png";
-import WA from "../../assets/weatherapp.png";
-import YT from "../../assets/ytclone.png";
-import PA from "../../assets/post-app.png";
-import IC from "../../assets/icommerce.png"
-import MA from "../../assets/post.png"
 
-// const projects = [
-//   {name: 'Portfolio', github: 'https://github.com/malvarez88/portfolio/tree/master', image: {YT}, }
-// ]
-
-//CAMBIAR FOTOS!!!!!!
+import { projects } from "../../utils/proyects";
 
 const Portfolio = () => {
   return (
@@ -21,7 +9,30 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        <article className="portfolio__item">
+        {projects.map((project) => (
+          <article className="portfolio__item">
+            <div className="portfolio__item-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+            <h3>{project.title}</h3>
+            <div className="portfolio__item-cta">
+              {project.cta ?
+              <a
+                href={project.github ? project.github : project.deploy}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {project.cta}
+              </a>
+              : null }
+            </div>
+            <div className="portfolio__overview">
+              <p>{project.description}</p>
+            </div>
+          </article>
+        ))}
+        {/* <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={PF} alt="reactnative" />
           </div>
@@ -150,7 +161,7 @@ const Portfolio = () => {
             <p>
               We made an application for the Global News company in two weeks,
               which was necessary so that its employees could notify absences
-              and see notifications from their cell phones and at any time.{" "}
+              and see notifications from their cell phones and at any time.
               <br />
               Used technologies: React Native, Redux, NodeJS, Sequelize.
             </p>
@@ -230,7 +241,7 @@ const Portfolio = () => {
               TMDB. <br /> Used technologies: React
             </p>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );
