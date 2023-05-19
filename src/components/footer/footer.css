@@ -44,3 +44,68 @@ footer a {
     font-size: 1.5rem;
     gap: 1rem;
 }
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.312rem;
+    gap: 10px;
+  }
+
+.btn-switch {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    
+    padding: 0.75rem 1.25rem;
+    font-size: inherit;
+    font-size: clamp(1rem, 5vw, 1.312rem);
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+  }
+
+  .btn-switch:first-of-type {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+  
+  .btn-switch:last-of-type {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  
+  .btn-switch[aria-pressed="true"] {
+    background-color: var(--color-text);
+    color: var(--color-bg-variant);
+  }
+  
+  .btn-switch:is(:hover, :focus) {
+    box-shadow: 0 0 0 2px var(--color-text) inset;
+  }
+  
+  .btn-switch[aria-pressed="true"]:is(:hover, :focus) {
+    box-shadow: 0 0 0 2px var(--color-background) inset;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    
+    .theme-switcher {
+      display: block;
+    }
+    
+    .btn-switch {
+      display: block;
+      margin: 0 auto;
+      border-radius: var(--border-radius);
+    }
+    
+    .btn-switch:is(:first-of-type, :last-of-type) {
+      border-radius: var(--border-radius);
+    }
+    
+    .btn-switch + button {
+      border-left: 2px solid var(--color-text);
+      margin-top: 1rem;
+    }
+  }
