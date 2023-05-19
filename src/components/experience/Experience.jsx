@@ -1,18 +1,64 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./experience.css";
-
 import { BsPatchCheckFill } from "react-icons/bs";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Experience = () => {
+  const frontendRef = useRef(null);
+  const backendRef = useRef(null);
+  const headingRef = useRef(null)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      headingRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1, scrollTrigger: { trigger: headingRef.current, start: "top 80%" } }
+    );
+
+
+    gsap.fromTo(
+      frontendRef.current.querySelectorAll(".experience__details"),
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: frontendRef.current,
+          start: "top 80%",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      backendRef.current.querySelectorAll(".experience__details"),
+      { opacity: 0, x: 100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: backendRef.current,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5 ref={headingRef}>What Skills I Have</h5>
+      <h2 ref={headingRef}>My Experience</h2>
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div className="experience__frontend" ref={frontendRef}>
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
+          <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
                 <h4>HTML</h4>
@@ -91,11 +137,10 @@ const Experience = () => {
             </article>
           </div>
         </div>
-        {/* end of frontend */}
-        <div className="experience__backend">
+        <div className="experience__backend" ref={backendRef}>
           <h3>Backend Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
+          <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
                 <h4>Node JS</h4>

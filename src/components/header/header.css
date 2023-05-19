@@ -5,21 +5,28 @@ header {
   position: relative;
 }
 
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.5;
+.name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 7rem;
+  /* margin: 0 auto; */
+  top: 100px;
+  overflow: hidden;
+  transform: translateY(215px);
+  transition: transform 0.5s;
+}
+
+.name__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
 /* ===== CTA ===== */
@@ -57,16 +64,19 @@ video {
 /* ===== IMG ===== */
 
 .me {
-  width: 35%;
-  height: 50rem;
+  width: auto;
+  /* height: 50rem; */
   position: absolute;
   left: 51%;
   transform: translateX(-50%);
-  margin-top: 10rem;
+  margin-top: 40px;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
-  margin-bottom: 100rem;
-  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+  /* margin-bottom: 100rem; */
+  /* opacity: 0.7; */
 }
 
 /* ===== SCROLL DOWN ===== */
@@ -87,10 +97,9 @@ video {
   }
   .me {
     width: 22rem;
-    height: 60rem;
+    /* height: 60rem; */
     margin-top: 1rem;
   }
-
 }
 
 /* ===== MQ SMALL ===== */
@@ -105,11 +114,10 @@ video {
 
   .me {
     width: 22rem;
-    height: 60rem;
+    /* height: 60rem; */
     margin-top: 1rem;
-
   }
-  
+
   h2 {
     font-size: 1rem;
   }
@@ -123,6 +131,9 @@ video {
     flex: 1;
   } */
 
+  .name {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-height: 500px) {
@@ -134,95 +145,13 @@ video {
   header {
     height: 50vh;
   }
+  /* .name {
+    display: none;
+  } */
 }
 
-
-
-
-
-.glitch {
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  margin: 1rem;
-
-  text-shadow: 0.05em 0 0 var(--color-text),
-    -0.025em -0.05em 0 var(--color-pink-primary),var(--color-green-primary);
-
-  animation: glitch 500ms infinite;
-}
-
-.glitch span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.glitch span:first-child {
-  animation: glitch 650ms infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-0.025em, -0.0125em);
-  /* color: green; */
-  opacity: 0.8;
-}
-
-.glitch span:last-child {
-  animation: glitch 375ms infinite;
-  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-  transform: translate(0.0125em, 0.025em);
-  /* color: red; */
-  opacity: 0.8;
-}
-
-/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 var(--color-text),
-      -0.05em -0.025em 0 var(--color-pink-primary),
-      -0.025em 0.05em 0 var(--color-green-primary);
-  }
-  14% {
-    text-shadow: 0.05em 0 0 var(--color-text),
-      -0.05em -0.025em 0 var(--color-pink-primary),
-      -0.025em 0.05em 0 var(--color-green-primary);
-  }
-  15% {
-    text-shadow: -0.05em -0.025em 0 var(--color-text),
-      0.025em 0.025em 0 var(--color-pink-primary),
-      -0.05em -0.05em 0 var(--color-green-primary);
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 var(--color-text),
-      0.025em 0.025em 0 var(--color-pink-primary),
-      -0.05em -0.05em 0 var(--color-green-primary);
-  }
-  50% {
-    text-shadow: 0.025em 0.05em 0 var(--color-text),
-      0.05em 0 0 var(--color-pink-primary), 0 -0.05em 0 var(--color-green-primary);
-  }
-  99% {
-    text-shadow: 0.025em 0.05em 0 var(--color-text),
-      0.05em 0 0 var(--color-pink-primary), 0 -0.05em 0 var(--color-green-primary);
-  }
-  100% {
-    text-shadow: -0.025em 0 0 var(--color-text),
-      -0.025em -0.025em 0 var(--color-pink-primary),
-      -0.025em -0.05em 0 var(--color-green-primary);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
-    background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
-  }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /* .name {
+    display: none;
+  } */
 }

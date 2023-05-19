@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import './navbar.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {SiAboutdotme} from 'react-icons/si'
 import {BiBook} from 'react-icons/bi'
 import {BiMessageAltDetail} from 'react-icons/bi'
 import {RiSuitcaseLine} from 'react-icons/ri'
-
-import {useState} from 'react'
+import { gsap } from 'gsap'
 
 const Navbar = () => {
   const [active, setActive] = useState('#')
+  const navRef = useRef(null)
+
+  useEffect(()=> {
+    gsap.fromTo(navRef.current, {opacity:0 }, { opacity: 1, delay: 3 })
+  })
+
   return (
-    <nav>
+    <nav ref={navRef}>
       <a href='#' onClick={()=> setActive('#')} className={active === '#' ? 'active' : ''}><AiOutlineHome /></a>
       <a href='#about' onClick={()=> setActive('#about')} className={active === '#about' ? 'active' : ''}><SiAboutdotme /></a>
       <a href='#portfolio' onClick={()=> setActive('#portfolio')} className={active === '#portfolio' ? 'active' : ''}><RiSuitcaseLine /></a>
