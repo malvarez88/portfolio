@@ -26,7 +26,3 @@ function App() {
 
 export default App;
 
-
-
- {/* <img src = {logoma} alt='logoma'/>
-    <img src = {caricature} alt='caricature'/> */}

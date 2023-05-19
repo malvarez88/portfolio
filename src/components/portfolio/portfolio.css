@@ -9,7 +9,7 @@
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
-  transition: var(--transition);
+  /* transition: var(--transition); */
   overflow: hidden;
   position: relative;
 }
