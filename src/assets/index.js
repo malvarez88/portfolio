@@ -10,9 +10,10 @@ import andes from './andesorigen.png';
 import munay from './munay-faq.png';
 import nowon from './nowon.png';
 import vulk from './vulk.png'
+import daura from './daura.png'
 
 
 
 export {
-    edlab, postapp, tmdb, pf, wa, yt, ic, cebada, andes, munay, nowon, vulk
+    edlab, postapp, tmdb, pf, wa, yt, ic, cebada, andes, munay, nowon, vulk,daura
 };

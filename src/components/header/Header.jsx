@@ -32,7 +32,7 @@ const Header = () => {
     );
     gsap.fromTo(
       scrollRef.current,
-      {opacity:0 }, { opacity: 1, delay: 2.5 }
+      {opacity:0 }, { opacity: 1, duration: 0.5, delay: 2 }
     );
   }, []);
 

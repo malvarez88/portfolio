@@ -11,9 +11,18 @@ import {
   munay,
   nowon,
   vulk,
+  daura
 } from "../assets";
 
 const projects = [
+  {
+    title: "D'Aura Arquitectura",
+    description: "Web application for an architecture studio in Barcelona. It is made with React, CSS and animated with framer motion. It has a custom cursor.",
+    cta: "Deploy",
+    image: daura,
+    deploy: "https://daura4.netlify.app/"
+  },
+
   {
     title: "Andes Origen - Fresquita",
     description:
