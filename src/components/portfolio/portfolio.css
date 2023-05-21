@@ -1,7 +1,11 @@
 .portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  overflow: hidden;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
   gap: 2.5rem;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .portfolio__item {
