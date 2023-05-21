@@ -129,4 +129,77 @@ const projects = [
   },
 ];
 
-export { projects };
+
+const frontend = [
+  {
+    name: 'HTML',
+    experience: 'Experienced'
+  },
+  {
+    name: 'CSS',
+    experience: 'Experienced'
+  },
+  {
+    name: 'Javascript',
+    experience: 'Experienced'
+  },
+  {
+    name: 'Typescript',
+    experience: 'Intermediate'
+  },
+  {
+    name: 'React',
+    experience: 'Experienced',
+  },
+  {
+    name: 'Next',
+    experience: 'Intermediate',
+  },
+  {
+    name: 'Matreial UI',
+    experience: 'Experienced',
+  },
+  {
+    name: 'React Redux',
+    experience: 'Experienced',
+  },
+  {
+    name: 'React Native',
+    experience: 'Experienced',
+  },
+  {
+    name: 'Photoshop',
+    experience: 'Experienced',
+  },
+  {
+    name: 'Illustrator',
+    experience: 'Experienced',
+  }
+
+]
+
+const backend = [
+  {
+    name: 'Node JS',
+    experience: 'Experienced',
+  },
+  {
+    name: 'SQL',
+    experience: 'Intermediate',
+  },
+  {
+    name: 'Sequelize',
+    experience: 'Experienced',
+  },
+  {
+    name: 'Mongo DB',
+    experience: 'Intermediate',
+  },
+  {
+    name: 'Python',
+    experience: 'Intermediate',
+  }
+
+]
+
+export { projects, frontend, backend };
