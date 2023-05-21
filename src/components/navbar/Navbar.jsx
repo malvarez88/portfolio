@@ -11,9 +11,9 @@ const Navbar = () => {
   const [active, setActive] = useState('#')
   const navRef = useRef(null)
 
-  useEffect(()=> {
-    gsap.fromTo(navRef.current, {opacity:0 }, { opacity: 1, delay: 3 })
-  })
+  // useEffect(()=> {
+  //   gsap.fromTo(navRef.current, {opacity:0 }, { opacity: 1, delay: 3 }, { once: true})
+  // })
 
   return (
     <nav ref={navRef}>

@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 import "./footer.css";
+import ColorPicker from "../colorPicker/ColorPicker";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = ({ setTheme }) => {
-  const [selectedButton, setSelectedButton] = useState("regular");
-
-  const handleTheme = (e) => {
-    const selectedTheme = e.target.value;
-    e.preventDefault();
-    setTheme(selectedTheme);
-    setSelectedButton(selectedTheme);
-  };
+ 
   return (
     <footer>
       <a href="#" className="footer__logo">
@@ -51,51 +45,7 @@ const Footer = ({ setTheme }) => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-
-      <h3>Color Picker</h3>
-      <div className="theme-switcher">
-        <button
-          className="btn-switch"
-          aria-pressed={selectedButton === "regular"}
-          value="regular"
-          onClick={handleTheme}
-        >
-          Regular
-        </button>
-        <button
-          className="btn-switch"
-          aria-pressed={selectedButton === "violet"}
-          value="violet"
-          onClick={handleTheme}
-        >
-          Violet
-        </button>
-        <button
-          className="btn-switch"
-          aria-pressed={selectedButton === "red"}
-          value="red"
-          onClick={handleTheme}
-        >
-          Red
-        </button>
-        <button
-          className="btn-switch"
-          aria-pressed={selectedButton === "pink"}
-          value="pink"
-          onClick={handleTheme}
-        >
-          Pink
-        </button>
-        <button
-          className="btn-switch"
-          aria-pressed={selectedButton === "shine"}
-          value="shine"
-          onClick={handleTheme}
-        >
-          Shine
-        </button>
-      </div>
-
+     {/* <ColorPicker setTheme={setTheme}/> */}
       <div className="footer__copyright">
         <small>&copy; Mariano Alvarez - All rights reserved - 2022</small>
       </div>

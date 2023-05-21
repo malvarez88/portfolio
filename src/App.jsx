@@ -13,12 +13,14 @@ function App() {
   const [theme, setTheme] = useState("regular");
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    setTheme(savedTheme);
     document.body.setAttribute("data-selected-theme", theme);
   }, [theme]);
 
   return (
     <>
-      <Header />
+      <Header setTheme={setTheme} />
       <Navbar />
       <About />
       <Portfolio />

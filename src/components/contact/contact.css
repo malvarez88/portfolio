@@ -50,7 +50,7 @@ textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid var(--color-pink-secondary);
+  border: 2px solid var(--color-pink-primary);
   resize: none;
   color: var(--color-text);
 }

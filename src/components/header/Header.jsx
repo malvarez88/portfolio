@@ -3,12 +3,13 @@ import "./header.css";
 import CTA from "./CTA";
 import logo from "../../assets/logoma.png";
 import HeaderSocials from "./HeaderSocials";
+import ColorPicker from "../colorPicker/ColorPicker";
 
 import { gsap } from "gsap";
 
 import WordAnimation from "../wordAnimation/wordAnimation";
 
-const Header = () => {
+const Header = ({ setTheme }) => {
   const h4Ref = useRef(null);
   const h3Ref = useRef(null);
   const logoRef = useRef(null);
@@ -32,12 +33,15 @@ const Header = () => {
     );
     gsap.fromTo(
       scrollRef.current,
-      {opacity:0 }, { opacity: 1, duration: 0.5, delay: 2 }
+      { opacity: 0 },
+      { opacity: 1, duration: 0.5, delay: 2 }
     );
   }, []);
 
   return (
+    <>
     <header>
+      <ColorPicker setTheme={setTheme}/>
       <div className="container header__container">
         <h4 ref={h4Ref}>Hello I'm</h4>
         <WordAnimation word="Mariano.Alvarez" />
@@ -54,6 +58,7 @@ const Header = () => {
         </a>
       </div>
     </header>
+    </>
   );
 };
 
