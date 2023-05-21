@@ -11,7 +11,6 @@ const Experience = () => {
   const backendRef = useRef(null);
   const headingRef = useRef(null);
 
-  console.log(frontend);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
