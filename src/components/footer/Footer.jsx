@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./footer.css";
-import ColorPicker from "../colorPicker/ColorPicker";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = ({ setTheme }) => {
  
   return (
-    <footer>
-      <a href="#" className="footer__logo">
+    <footer id="footer">
+      <a href="/" className="footer__logo">
         <h3>Mariano Alvarez</h3>
       </a>
       <div className="footer__links">
@@ -30,7 +29,7 @@ const Footer = ({ setTheme }) => {
       </div>
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="#about">About</a>

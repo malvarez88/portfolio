@@ -8,6 +8,7 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ColorPicker from "./components/colorPicker/ColorPicker";
 
 function App() {
   const [theme, setTheme] = useState("regular");
@@ -20,13 +21,14 @@ function App() {
 
   return (
     <>
-      <Header setTheme={setTheme} />
+      <ColorPicker setTheme={setTheme} />
+      <Header />
       <Navbar />
       <About />
       <Portfolio />
       <Experience />
       <Contact />
-      <Footer setTheme={setTheme} />
+      <Footer />
     </>
   );
 }

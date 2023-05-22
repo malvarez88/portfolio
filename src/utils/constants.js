@@ -22,11 +22,10 @@ const projects = [
     image: daura,
     deploy: "https://daura4.netlify.app/"
   },
-
   {
     title: "Andes Origen - Fresquita",
     description:
-      "Develop a game, using animations in css and jquery. And General maintenance of the web application.",
+      "Develop a game, using animations in css and jquery. General maintenance of the web application.",
     image: andes,
     cta: "Deploy",
     deploy: "https://andesorigen.com.ar/fresquita/",

@@ -3,7 +3,6 @@ import "./header.css";
 import CTA from "./CTA";
 import logo from "../../assets/logoma.png";
 import HeaderSocials from "./HeaderSocials";
-import ColorPicker from "../colorPicker/ColorPicker";
 
 import { gsap } from "gsap";
 
@@ -40,8 +39,7 @@ const Header = ({ setTheme }) => {
 
   return (
     <>
-    <header>
-      <ColorPicker setTheme={setTheme}/>
+    <header id="home">
       <div className="container header__container">
         <h4 ref={h4Ref}>Hello I'm</h4>
         <WordAnimation word="Mariano.Alvarez" />
