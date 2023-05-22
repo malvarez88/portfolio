@@ -1,39 +1,68 @@
-
 import React, { useEffect, useRef } from "react";
 import "./portfolio.css";
+import { projects } from "../../utils/constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Slider from "../slider/Slider";
-import { projects } from "../../utils/constants";
 
 const Portfolio = () => {
-  const headingRef = useRef(null);
-  const portfolioSectionRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const headingRef = useRef(null)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(portfolioSectionRef.current, {
-      position:'fixed',
-      width: "100%",
-      top: 0,
-      scrollTrigger: {
-        trigger: portfolioSectionRef.current,
-        start: "top top",
-        end: "+=100%",
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+    gsap.fromTo(
+      headingRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1, scrollTrigger: { trigger: headingRef.current, start: "top 80%" } }
+    );
 
-    ScrollTrigger.refresh();
+
+    gsap.fromTo(
+      portfolioRef.current.querySelectorAll(".portfolio__item"),
+      { opacity: 0, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: portfolioRef.current,
+          start: "top 80%",
+        },
+      }
+    );
   }, []);
 
   return (
-    <section id="portfolio" ref={portfolioSectionRef}>
+    <section id="portfolio">
       <h5 ref={headingRef}>My Recent Work</h5>
       <h2 ref={headingRef}>Portfolio</h2>
-      <Slider projects={projects} />
+      <div className="container portfolio__container" ref={portfolioRef}>
+        {projects.map((project, index) => (
+          <article className="portfolio__item" key={index}>
+            <div className="portfolio__item-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+            <h3>{project.title}</h3>
+            <div className="portfolio__item-cta">
+              {project.cta ? (
+                <a
+                  href={project.github ? project.github : project.deploy}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {project.cta}
+                </a>
+              ) : null}
+            </div>
+            <div className="portfolio__overview">
+              <p>{project.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 };

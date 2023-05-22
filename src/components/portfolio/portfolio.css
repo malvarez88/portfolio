@@ -1,61 +1,70 @@
-.slider__container {
-  height: 100vh;
-  display: flex;
-  overflow-x: scroll;
-  align-items: center;
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
-.project__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Bebas Neue", sans-serif;
-  padding: 10px;
-  /* margin: 0 20px; */
-  min-width: 350px;
-  height: 700px;
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  /* transition: var(--transition); */
+  overflow: hidden;
   position: relative;
 }
 
-.project__title {
-  font-size: 5rem;
-  cursor: pointer;
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
-.project__container:hover .project__image,
-.project__container:hover .project__description,
-.project__container:hover .portfolio__item-cta {
-  opacity: 1;
-}
-
-
-.project__image {
-  width: 350px;
-  height: 200px;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project__description {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-family: 'Roboto Mono', monospace;
+.portfolio__item h3 {
+  margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item-cta {
-  font-family: 'Roboto Mono', monospace;
   display: flex;
   gap: 1rem;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
   justify-content: space-around;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  position: absolute;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+/* .portfolio__overview {
   bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(110%);
+  transition: transform 0.3s ease-in-out;
+} */
+
+/* .portfolio__item:hover .portfolio__overview{
+  transform: translateY(0%);
+} */
+
+/* ===== MQ MEDIUM ===== */
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ===== MQ SMALL ===== */
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
