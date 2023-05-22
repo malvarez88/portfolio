@@ -64,9 +64,9 @@ const Experience = () => {
         <div className="experience__frontend" ref={frontendRef}>
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            {frontend.map((front) => {
+            {frontend.map((front, index) => {
               return (
-                <article className="experience__details">
+                <article className="experience__details" index={index}>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{front.name}</h4>
@@ -80,9 +80,9 @@ const Experience = () => {
         <div className="experience__backend" ref={backendRef}>
           <h3>Backend Development</h3>
           <div className="experience__content">
-            {backend.map((back) => {
+            {backend.map((back, index) => {
               return (
-                <article className="experience__details">
+                <article className="experience__details" index={index}>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{back.name}</h4>

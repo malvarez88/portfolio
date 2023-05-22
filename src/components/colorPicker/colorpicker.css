@@ -1,4 +1,4 @@
-.color-picker {
+/* .color-picker {
     display: flex;
     grid-area: 10px;
     justify-content: center;
@@ -8,13 +8,23 @@
     top: 0;
     right: 10%;
     z-index: 100;
-  }
+  } */
 
 .theme-switcher {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0 1rem 0;
     gap: 10px;
+
+    /* display: flex; */
+    grid-area: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: 100;
   }
 
 .btn-switch {
@@ -28,14 +38,6 @@
     border: 2px solid var(--color-text);
   }
 
-  /* .btn-switch:first-of-type {
-    border-radius: var(--border-radius) 0 0 var(--border-radius);
-  } */
-  
-  /* .btn-switch:last-of-type {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  } */
-  
   .btn-switch[aria-pressed="true"] {
     background-color: var(--color-text);
     color: var(--color-bg-variant);
@@ -51,20 +53,17 @@
 
 
   @media screen and (max-width: 500px) {
-
-  
     .theme-switcher {
+      position: absolute;
       display: block;
+      top: 0;
+      right: 10px;
+      margin: 0;
     }
     
     .btn-switch {
-      display: block;
+      /* display: block; */
       margin: 0 auto;
-      border-radius: var(--border-radius);
-    }
-    
-    .btn-switch:is(:first-of-type, :last-of-type) {
-      border-radius: var(--border-radius);
     }
     
     .btn-switch + button {

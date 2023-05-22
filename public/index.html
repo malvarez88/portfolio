@@ -23,5 +23,16 @@
   </head>
   <body data-selected-theme="regular">
     <div id="root"></div>
+
+    <script>
+      var selectedTheme = localStorage.getItem("theme") || "regular";
+
+      document.body.dataset.selectedTheme = selectedTheme;
+
+      var themeColor = selectedTheme === "regular" ? "#151314" : "#f9fcf0";
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", themeColor);
+    </script>
   </body>
 </html>

@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./colorpicker.css";
+import { gsap } from "gsap";
+
 const ColorPicker = ({ setTheme }) => {
   const [selectedButton, setSelectedButton] = useState(
     localStorage.getItem("theme") || "dark"
   );
+  
+  const colorRef = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(colorRef.current, { opacity: 0 }, {opacity: 1, duration: 1, delay: 1.5});
+  }, []);
+
 
   const handleTheme = (e) => {
     const selectedTheme = e.target.value;
@@ -14,7 +23,7 @@ const ColorPicker = ({ setTheme }) => {
   };
 
   return (
-    <div className="color-picker">
+    <div className="color-picker" ref={colorRef}>
       <div className="theme-switcher">
         <button
           className="btn-switch"
