@@ -1,53 +1,61 @@
-.portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+.slider__container {
+  height: 100vh;
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
 }
 
-.portfolio__item {
-  background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  /* transition: var(--transition); */
-  overflow: hidden;
+.project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px;
+  /* margin: 0 20px; */
+  min-width: 350px;
+  height: 700px;
   position: relative;
 }
 
-
-.portfolio__item-image {
-  border-radius: 1.5rem;
-  overflow: hidden;
+.project__title {
+  font-size: 5rem;
+  cursor: pointer;
 }
 
-.portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+.project__container:hover .project__image,
+.project__container:hover .project__description,
+.project__container:hover .portfolio__item-cta {
+  opacity: 1;
+}
+
+
+.project__image {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project__description {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .portfolio__item-cta {
+  font-family: 'Roboto Mono', monospace;
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   justify-content: space-around;
-}
-
-p {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-/* ===== MQ MEDIUM ===== */
-@media screen and (max-width: 1024px) {
-  .portfolio__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  }
-}
-
-/* ===== MQ SMALL ===== */
-@media screen and (max-width: 600px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 0;
 }

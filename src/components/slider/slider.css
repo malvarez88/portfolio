@@ -35,9 +35,6 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.3s ease;
-    position: sticky; /* Nueva propiedad */
-    top: 0; /* Nueva propiedad */
-    z-index: 1; /* Nueva propiedad */
   }
 
   .project__description {
@@ -48,9 +45,6 @@
     margin-top: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    position: sticky; /* Nueva propiedad */
-    top: 0; /* Nueva propiedad */
-    z-index: 1; /* Nueva propiedad */
     font-family: 'Roboto Mono', monospace;
   }
   
