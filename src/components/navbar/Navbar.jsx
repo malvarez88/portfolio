@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./navbar.css";
 import { Link } from 'react-scroll';
 import { AiOutlineHome } from "react-icons/ai";
@@ -6,15 +6,15 @@ import { SiAboutdotme } from "react-icons/si";
 import { BiBook } from "react-icons/bi";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { RiSuitcaseLine } from "react-icons/ri";
-// import { gsap } from 'gsap'
+import { gsap } from 'gsap'
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const navRef = useRef(null);
 
-  // useEffect(()=> {
-  //   gsap.fromTo(navRef.current, {opacity:0 }, { opacity: 1, delay: 3 }, { once: true})
-  // })
+  useEffect(()=> {
+    gsap.fromTo(navRef.current, {opacity:0 }, { opacity: 1, delay: 3 })
+  },[])
 
   return (
     <nav ref={navRef}>
