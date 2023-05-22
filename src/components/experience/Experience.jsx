@@ -66,7 +66,7 @@ const Experience = () => {
           <div className="experience__content">
             {frontend.map((front, index) => {
               return (
-                <article className="experience__details" index={index}>
+                <article className="experience__details" key={index}>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{front.name}</h4>
@@ -82,7 +82,7 @@ const Experience = () => {
           <div className="experience__content">
             {backend.map((back, index) => {
               return (
-                <article className="experience__details" index={index}>
+                <article className="experience__details" key={index}>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{back.name}</h4>

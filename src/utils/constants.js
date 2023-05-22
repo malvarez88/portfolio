@@ -17,6 +17,7 @@ import {
 const projects = [
   {
     title: "D'Aura Arquitectura",
+    slug: "D'Aura",
     description: "Web application for an architecture studio in Barcelona. It is made with React, CSS and animated with framer motion. It has a custom cursor.",
     cta: "Deploy",
     image: daura,
@@ -24,6 +25,7 @@ const projects = [
   },
   {
     title: "Andes Origen - Fresquita",
+    slug: 'Andes',
     description:
       "Develop a game, using animations in css and jquery. General maintenance of the web application.",
     image: andes,
@@ -32,11 +34,13 @@ const projects = [
   },
   {
     title: "Vulk",
+    slug: 'Vulk',
     description: "General maintenance of the web application.",
     image: vulk,
   },
   {
     title: "Munay",
+slug:'Munay',
     description: "General maintenance of the web application.",
     image: munay,
     cta: "Deploy",
@@ -44,6 +48,7 @@ const projects = [
   },
   {
     title: "Nowon",
+    slug: 'Nowon',
     description: "General maintenance of the web application.",
     image: nowon,
     cta: "Deploy",
@@ -51,6 +56,7 @@ const projects = [
   },
   {
     title: "Cebada Gauchada",
+    slug: 'Cebada',
     description: "General maintenance of the web application.",
     image: cebada,
     cta: "Deploy",
@@ -58,6 +64,7 @@ const projects = [
   },
   {
     title: "Portfolio",
+    slug: "Portfolio",
     github: "https://github.com/malvarez88/portfolio/tree/master",
     cta: "Github",
     description:
@@ -66,6 +73,7 @@ const projects = [
   },
   {
     title: "iCommerce",
+    slug:"iCommerce",
     github: "https://github.com/malvarez88/ecommerce-next-tailwind-ts",
     deploy: "https://icommerce-btedsqzk4-malvarez88.vercel.app/",
     cta: "github",
@@ -76,6 +84,7 @@ const projects = [
   },
   {
     title: "Youtube Clone",
+    slug: 'YT Clone',
     github: "https://github.com/malvarez88/youtube-clone",
     deploy: "https://ytmedia-clone.netlify.app/",
     cta: "Github",
@@ -86,6 +95,7 @@ const projects = [
   },
   {
     title: "Post App",
+    slug: "Post App",
     github: "https://github.com/malvarez88/memories-project",
     cta: "Github",
     description:
@@ -94,6 +104,7 @@ const projects = [
   },
   {
     title: "App for HHRR Managment - Global News",
+    slug: "HHRR App",
     github: "https://github.com/diego-scarpati/Global-News-Back",
     cta: "Github",
     description:
@@ -102,6 +113,7 @@ const projects = [
   },
   {
     title: "Ecommerce EDLAB - Backend",
+    slug: "EDLAB",
     github: "https://github.com/malvarez88/EDLAB_BACK/tree/master",
     cta: "Github",
     description:
@@ -110,6 +122,7 @@ const projects = [
   },
   {
     title: "Weather App",
+    slug: "Weather",
     github: "https://github.com/malvarez88/weatherApp/tree/master",
     deploy: "https://weather-app-livid-gamma.vercel.app/",
     cta: "Github",
@@ -120,6 +133,7 @@ const projects = [
   },
   {
     title: "TMDB - Movie Database",
+    slug: "TMDB",
     github: "https://github.com/malvarez88/TMDB/tree/master",
     cta: "Github",
     description:

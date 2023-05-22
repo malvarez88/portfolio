@@ -1,0 +1,68 @@
+
+   .slider__container {
+    height: 100vh;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+
+  }
+  
+  .project__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px;
+    /* margin: 0 20px; */
+    min-width: 350px;
+    min-height: 700px;
+    position: relative;
+  }
+
+  .project__title {
+    font-size: 5rem;
+  }
+  
+  .project__container:hover .project__image,
+  .project__container:hover .project__description,
+  .project__container:hover .portfolio__item-cta
+  {
+    opacity: 1;
+  }
+  .project__image {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: sticky; /* Nueva propiedad */
+    top: 0; /* Nueva propiedad */
+    z-index: 1; /* Nueva propiedad */
+  }
+
+  .project__description {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: sticky; /* Nueva propiedad */
+    top: 0; /* Nueva propiedad */
+    z-index: 1; /* Nueva propiedad */
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .portfolio__item-cta {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 0;
+  }
+  
