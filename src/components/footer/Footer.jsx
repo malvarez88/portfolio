@@ -3,7 +3,7 @@ import "./footer.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
-const Footer = ({ setTheme }) => {
+const Footer = () => {
  
   return (
     <footer id="footer">
@@ -44,7 +44,6 @@ const Footer = ({ setTheme }) => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-     {/* <ColorPicker setTheme={setTheme}/> */}
       <div className="footer__copyright">
         <small>&copy; Mariano Alvarez - All rights reserved - 2022</small>
       </div>

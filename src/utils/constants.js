@@ -11,56 +11,18 @@ import {
   munay,
   nowon,
   vulk,
-  daura
+  daura,
 } from "../assets";
 
 const projects = [
   {
     title: "D'Aura Arquitectura",
     slug: "D'Aura",
-    description: "Web application for an architecture studio in Barcelona. It is made with React, CSS and animated with framer motion. It has a custom cursor.",
+    description:
+      "Web application for an architecture studio in Barcelona. It is made with React, CSS and animated with framer motion. It has a custom cursor.",
     cta: "Deploy",
     image: daura,
-    deploy: "https://daura4.netlify.app/"
-  },
-  {
-    title: "Andes Origen - Fresquita",
-    slug: 'Andes',
-    description:
-      "Develop a game, using animations in css and jquery. General maintenance of the web application.",
-    image: andes,
-    cta: "Deploy",
-    deploy: "https://andesorigen.com.ar/fresquita/",
-  },
-  {
-    title: "Vulk",
-    slug: 'Vulk',
-    description: "General maintenance of the web application.",
-    image: vulk,
-  },
-  {
-    title: "Munay",
-slug:'Munay',
-    description: "General maintenance of the web application.",
-    image: munay,
-    cta: "Deploy",
-    deploy: "https://www.somosmunay.org/index.php",
-  },
-  {
-    title: "Nowon",
-    slug: 'Nowon',
-    description: "General maintenance of the web application.",
-    image: nowon,
-    cta: "Deploy",
-    deploy: "https://nowon.us/",
-  },
-  {
-    title: "Cebada Gauchada",
-    slug: 'Cebada',
-    description: "General maintenance of the web application.",
-    image: cebada,
-    cta: "Deploy",
-    deploy: "https://cebadagauchada.com.ar/",
+    deploy: "https://daura4.netlify.app/",
   },
   {
     title: "Portfolio",
@@ -68,15 +30,55 @@ slug:'Munay',
     github: "https://github.com/malvarez88/portfolio/tree/master",
     cta: "Github",
     description:
-      " This is my portfolio, actually i don't need to explain a lot, you can see it by yourself 😉 Used technologies: React, Material UI, Javascript, CSS.",
+      "This is my portfolio, actually i don't need to explain a lot, you can see it by yourself 😉 Used technologies: React, Material UI, Javascript, CSS.",
     image: pf,
   },
   {
+    title: "Andes Origen - Fresquita",
+    slug: "Andes",
+    description:
+      "Developed a game, using animations in css and jquery. General maintenance of the web application.",
+    image: andes,
+    cta: "Deploy",
+    deploy: "https://andesorigen.com.ar/fresquita/",
+  },
+  {
+    title: "Vulk",
+    slug: "Vulk",
+    description: "General maintenance of the web application.",
+    image: vulk,
+  },
+  {
+    title: "Munay",
+    slug: "Munay",
+    description: "General maintenance of the web application.",
+    image: munay,
+    cta: "Deploy",
+    deploy: "https://www.somosmunay.org/index.php",
+  },
+  {
+    title: "Nowon",
+    slug: "Nowon",
+    description: "General maintenance of the web application.",
+    image: nowon,
+    cta: "Deploy",
+    deploy: "https://nowon.us/",
+  },
+  {
+    title: "Cebada Gauchada",
+    slug: "Cebada",
+    description: "General maintenance of the web application.",
+    image: cebada,
+    cta: "Deploy",
+    deploy: "https://cebadagauchada.com.ar/",
+  },
+
+  {
     title: "iCommerce",
-    slug:"iCommerce",
+    slug: "iCommerce",
     github: "https://github.com/malvarez88/ecommerce-next-tailwind-ts",
     deploy: "https://icommerce-btedsqzk4-malvarez88.vercel.app/",
-    cta: "github",
+    cta: "Github",
     ctadeploy: "Deploy",
     description:
       "This is my iCommerce. I've used Typescript, Next.js &  Tailwindcss. For CMS i used Sanity.io, and for Auth, NextAuth. You can also login using Google. Checkout uses Stripe. Please check it out!",
@@ -84,7 +86,7 @@ slug:'Munay',
   },
   {
     title: "Youtube Clone",
-    slug: 'YT Clone',
+    slug: "YT Clone",
     github: "https://github.com/malvarez88/youtube-clone",
     deploy: "https://ytmedia-clone.netlify.app/",
     cta: "Github",
@@ -142,77 +144,74 @@ slug:'Munay',
   },
 ];
 
-
 const frontend = [
   {
-    name: 'HTML',
-    experience: 'Experienced'
+    name: "HTML",
+    experience: "Experienced",
   },
   {
-    name: 'CSS',
-    experience: 'Experienced'
+    name: "CSS",
+    experience: "Experienced",
   },
   {
-    name: 'Javascript',
-    experience: 'Experienced'
+    name: "Javascript",
+    experience: "Experienced",
   },
   {
-    name: 'Typescript',
-    experience: 'Intermediate'
+    name: "Typescript",
+    experience: "Intermediate",
   },
   {
-    name: 'React',
-    experience: 'Experienced',
+    name: "React",
+    experience: "Experienced",
   },
   {
-    name: 'Next',
-    experience: 'Intermediate',
+    name: "Next",
+    experience: "Intermediate",
   },
   {
-    name: 'Matreial UI',
-    experience: 'Experienced',
+    name: "Matreial UI",
+    experience: "Experienced",
   },
   {
-    name: 'React Redux',
-    experience: 'Experienced',
+    name: "React Redux",
+    experience: "Experienced",
   },
   {
-    name: 'React Native',
-    experience: 'Experienced',
+    name: "React Native",
+    experience: "Experienced",
   },
   {
-    name: 'Photoshop',
-    experience: 'Experienced',
+    name: "Photoshop",
+    experience: "Experienced",
   },
   {
-    name: 'Illustrator',
-    experience: 'Experienced',
-  }
-
-]
+    name: "Illustrator",
+    experience: "Experienced",
+  },
+];
 
 const backend = [
   {
-    name: 'Node JS',
-    experience: 'Experienced',
+    name: "Node JS",
+    experience: "Experienced",
   },
   {
-    name: 'SQL',
-    experience: 'Intermediate',
+    name: "SQL",
+    experience: "Intermediate",
   },
   {
-    name: 'Sequelize',
-    experience: 'Experienced',
+    name: "Sequelize",
+    experience: "Experienced",
   },
   {
-    name: 'Mongo DB',
-    experience: 'Intermediate',
+    name: "Mongo DB",
+    experience: "Intermediate",
   },
   {
-    name: 'Python',
-    experience: 'Intermediate',
-  }
-
-]
+    name: "Python",
+    experience: "Intermediate",
+  },
+];
 
 export { projects, frontend, backend };

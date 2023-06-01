@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 45% 50%;
   gap: 5%;
+  height: 80vh;
+  align-items: center;
 }
 
 .about__me {
@@ -80,7 +82,7 @@ section h5 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
